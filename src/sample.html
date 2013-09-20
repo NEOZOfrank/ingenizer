@@ -7,22 +7,24 @@
 <title>ingenizer</title>
 </head>
 
-<body>
+<body class="antialiased off-canvas hide-extras">
 
 <script type="text/javascript" src="lexer.js"></script>
 <script type="text/javascript" src="lexicon.js_"></script>
 <script type="text/javascript" src="POSTagger.js"></script>
 <script type="text/javascript" src="ingenize.js"></script>
 
+<nav class="top-bar hide-for-small" style=""></nav>
 
 
 <header>
 <div class="twelve columns">
+    <div class="row">
+        <div class="large-3 large-centered columns"><h1>ingenizer</h1></div>
+        <div class="large-6 large-centered columns"><h4 class="subheader">ingenizer is Openingen Sourcizer Softwaringen</h4></div>
+    </div>
    <div class="row">
-       <h1>Tagged Sample Text</h1>
-   </div>
-   <div class="row">
-        <textarea id="input_text" onkeydown="ingenize();">
+        <textarea id="input_text" style="height:10em;" onkeydown="ingenize();">
             Bonaparte has been as profuse in his disposal of the Imperial
             diadem of Germany, as in his promises of the papal tiara of Rome.  The
             Houses of Austria and Brandenburgh, the Electors of Bavaria and Baden,
@@ -158,12 +160,17 @@
 </div>
 </header>
 
-
-<p id="tagged_text"></p>
+<section id="mainContent" >
+    <div class="row">
+        <p id="tagged_text"></p>
+    </div>
+</section>
 
 <script type="text/javascript">
 ingenize();
 </script>
 
+
+<small>ingenizer is Openingen Sourcizer Softwaringen</small>
 </body>
 </html>
